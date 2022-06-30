@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71070C6C286D8EC1006105D1 /* DishesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71070C6A286D8EC1006105D1 /* DishesCollectionViewCell.swift */; };
+		71070C6D286D8EC1006105D1 /* DishesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71070C6B286D8EC1006105D1 /* DishesCollectionViewCell.xib */; };
+		71070C6F286D9054006105D1 /* Dishes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71070C6E286D9054006105D1 /* Dishes.swift */; };
+		71070C72286D915B006105D1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 71070C71286D915B006105D1 /* Kingfisher */; };
+		71070C74286D9233006105D1 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71070C73286D9233006105D1 /* String+Extension.swift */; };
+		71070C77286D96DC006105D1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71070C76286D96DC006105D1 /* CardView.swift */; };
 		71272FFD2866177400FF6CAC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71272FFC2866177400FF6CAC /* HomeViewController.swift */; };
 		7143283528649EE1007FEEF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7143283428649EE1007FEEF2 /* AppDelegate.swift */; };
 		7143283728649EE1007FEEF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7143283628649EE1007FEEF2 /* SceneDelegate.swift */; };
@@ -21,6 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		71070C6A286D8EC1006105D1 /* DishesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesCollectionViewCell.swift; sourceTree = "<group>"; };
+		71070C6B286D8EC1006105D1 /* DishesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishesCollectionViewCell.xib; sourceTree = "<group>"; };
+		71070C6E286D9054006105D1 /* Dishes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dishes.swift; sourceTree = "<group>"; };
+		71070C73286D9233006105D1 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		71070C76286D96DC006105D1 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		71272FFC2866177400FF6CAC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7143283128649EE1007FEEF2 /* Ogus Cake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ogus Cake.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7143283428649EE1007FEEF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,12 +52,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71070C72286D915B006105D1 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71070C68286D8E7B006105D1 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				71070C69286D8E86006105D1 /* DishesCollectionViewCell */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		71070C69286D8E86006105D1 /* DishesCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				71070C6A286D8EC1006105D1 /* DishesCollectionViewCell.swift */,
+				71070C6B286D8EC1006105D1 /* DishesCollectionViewCell.xib */,
+			);
+			path = DishesCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		71070C75286D96C4006105D1 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				71070C76286D96DC006105D1 /* CardView.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
 		71272FFB2866175A00FF6CAC /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				714328512864A65A007FEEF2 /* OnboardingSlide.swift */,
+				71070C6E286D9054006105D1 /* Dishes.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -119,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				7143284F2864A4E8007FEEF2 /* UIView+Extension.swift */,
+				71070C73286D9233006105D1 /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -126,6 +165,8 @@
 		71F0E412286AFC3D00437925 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				71070C75286D96C4006105D1 /* CardView */,
+				71070C68286D8E7B006105D1 /* CollectionViewCells */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -146,6 +187,9 @@
 			dependencies = (
 			);
 			name = "Ogus Cake";
+			packageProductDependencies = (
+				71070C71286D915B006105D1 /* Kingfisher */,
+			);
 			productName = "Ogus Cake";
 			productReference = 7143283128649EE1007FEEF2 /* Ogus Cake.app */;
 			productType = "com.apple.product-type.application";
@@ -174,6 +218,9 @@
 				Base,
 			);
 			mainGroup = 7143282828649EE1007FEEF2;
+			packageReferences = (
+				71070C70286D915B006105D1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 7143283228649EE1007FEEF2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -188,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71070C6D286D8EC1006105D1 /* DishesCollectionViewCell.xib in Resources */,
 				7143284128649EE2007FEEF2 /* LaunchScreen.storyboard in Resources */,
 				7143283E28649EE2007FEEF2 /* Assets.xcassets in Resources */,
 				7143283C28649EE1007FEEF2 /* Main.storyboard in Resources */,
@@ -202,12 +250,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7143283928649EE1007FEEF2 /* ViewController.swift in Sources */,
+				71070C74286D9233006105D1 /* String+Extension.swift in Sources */,
+				71070C6F286D9054006105D1 /* Dishes.swift in Sources */,
 				7143283528649EE1007FEEF2 /* AppDelegate.swift in Sources */,
+				71070C6C286D8EC1006105D1 /* DishesCollectionViewCell.swift in Sources */,
 				7143283728649EE1007FEEF2 /* SceneDelegate.swift in Sources */,
 				71272FFD2866177400FF6CAC /* HomeViewController.swift in Sources */,
 				714328502864A4E8007FEEF2 /* UIView+Extension.swift in Sources */,
 				714328522864A65A007FEEF2 /* OnboardingSlide.swift in Sources */,
 				714328542864AA14007FEEF2 /* OnboardingCollectionViewCell.swift in Sources */,
+				71070C77286D96DC006105D1 /* CardView.swift in Sources */,
 				7143284D2864A22A007FEEF2 /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +478,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		71070C70286D915B006105D1 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		71070C71286D915B006105D1 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71070C70286D915B006105D1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7143282928649EE1007FEEF2 /* Project object */;
 }

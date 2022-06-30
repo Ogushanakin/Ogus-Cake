@@ -34,7 +34,7 @@ class OnboardingViewController: UIViewController {
         
         slides = [
                     OnboardingSlide(title: "Delicious Dishes", description: "Experience a variety of amazing dishes from different cultures around the world.", image: #imageLiteral(resourceName: "slide1")),
-                    OnboardingSlide(title: "Workout Programs", description: "Hundreds of weight training and bodyweight quick workout plans.", image: #imageLiteral(resourceName: "slide6")),
+                    OnboardingSlide(title: "Workout Programs", description: "Hundreds of weight training and bodyweight quick workout plans.", image: #imageLiteral(resourceName: "workout")),
                     OnboardingSlide(title: "Book Recommendations", description: "There are many different types of useful book recommendations.", image: #imageLiteral(resourceName: "slide9"))
         ]
         

@@ -22,7 +22,7 @@ class HomeViewController: UIViewController {
         .init(id: "id1", name: "Defination Meal", image: "https://picsum.photos/100/200")
     ]
         
-    var workouts: [Workout] = [
+    var workouts: [Model] = [
     
         .init(id: "id2", name: "Upper Body Workout", image: "https://picsum.photos/100/200", description: "Lean muscle build", secondDescription: "chest,abs,back and shoulder training plan"),
         .init(id: "id2", name: "Upper Body Workout", image: "https://picsum.photos/100/200", description: "Lean muscle build", secondDescription: "chest,abs,back and shoulder training plan"),
@@ -32,7 +32,7 @@ class HomeViewController: UIViewController {
 
     ]
     
-    var books: [Book] = [
+    var books: [Model] = [
     
         .init(id: "id3", name: "Black Book", image: "https://picsum.photos/100/200", description: "Orhan Pamuk", secondDescription: "Literature"),
         .init(id: "id3", name: "Homo Sapiens", image: "https://picsum.photos/100/200", description: "Yuval Noah Harari", secondDescription: "History,Science"),
@@ -85,6 +85,16 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             cell.setup(book: books[indexPath.row])
             return cell
         default: return UICollectionViewCell()
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == dishesCollectionView {
+            
+        } else {
+            let controller = DetailPageViewController.instantiate()
+            controller.dish = collectionView == workoutCollectionView ? workouts[indexPath.row] : books[indexPath.row]
+            navigationController?.pushViewController(controller, animated: true)
         }
     }
 }

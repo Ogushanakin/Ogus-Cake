@@ -16,7 +16,7 @@ class WorkoutCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var firstDescriptionLbl: UILabel!
     @IBOutlet weak var secondDescriptionLbl: UILabel!
     
-    func setup(workout: Workout) {
+    func setup(workout: Model) {
         titleLbl.text = workout.name
         workoutImageView.kf.setImage(with: workout.image?.asUrl)
         firstDescriptionLbl.text = workout.description

@@ -16,7 +16,7 @@ class BooksCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var descriptionLbl: UILabel!
     @IBOutlet weak var secondDescriptionLbl: UILabel!
     
-    func setup(book: Book) {
+    func setup(book: Model) {
         bookImageView.kf.setImage(with: book.image?.asUrl)
         titleLbl.text = book.name
         descriptionLbl.text = book.description

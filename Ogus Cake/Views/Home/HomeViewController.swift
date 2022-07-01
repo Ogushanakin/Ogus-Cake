@@ -90,7 +90,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == dishesCollectionView {
-            
+            let controller = ListDishesViewController.instantiate()
+            controller.dish = dishes[indexPath.row]
+            navigationController?.pushViewController(controller, animated: true)
         } else {
             let controller = DetailPageViewController.instantiate()
             controller.dish = collectionView == workoutCollectionView ? workouts[indexPath.row] : books[indexPath.row]

@@ -347,7 +347,7 @@
                                         <rect key="frame" x="0.0" y="40" width="343" height="336.33333333333331"/>
                                         <attributedString key="attributedText">
                                             <fragment>
-                                                <mutableString key="content">Andre Aciman's Call Me by Your Name is the story of a sudden and powerful romance that blossoms between an adolescent boy and a summer guest at his parents' cliffside mansion on the Italian Riviera. Each is unprepared for the consequences of their attraction, when, during the restless summer weeks, unrelenting currents of obsession, fascination, and desire intensify their passion and test the charged ground between them. Recklessly, the two verge toward the one thing both fear they may never truly find again: total intimacy. It is an instant classic and one of the great love stories of our time.</mutableString>
+                                                <string key="content">Andre Aciman's Call Me by Your Name is the story of a sudden and powerful romance that blossoms between an adolescent boy and a summer guest at his parents' cliffside mansion on the Italian Riviera. Each is unprepared for the consequences of their attraction, when, during the restless summer weeks, unrelenting currents of obsession, fascination, and desire intensify their passion and test the charged ground between them. Recklessly, the two verge toward the one thing both fear they may never truly find again: total intimacy. It is an instant classic and one of the great love stories of our time.</string>
                                                 <attributes>
                                                     <color key="NSColor" systemColor="systemGrayColor"/>
                                                     <font key="NSFont" metaFont="system" size="17"/>
@@ -400,6 +400,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LHN-UY-IsF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2749.5999999999999" y="55.418719211822662"/>
+        </scene>
+        <!--List Dishes View Controller-->
+        <scene sceneID="5iR-ff-FEt">
+            <objects>
+                <viewController storyboardIdentifier="ListDishesViewController" id="bSY-FU-FDl" customClass="ListDishesViewController" customModule="Ogus_Cake" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TPh-Tt-ZrC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0Yr-B0-oHj">
+                                <rect key="frame" x="0.0" y="44" width="375" height="768"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="bSY-FU-FDl" id="hc6-J7-jXy"/>
+                                    <outlet property="delegate" destination="bSY-FU-FDl" id="jwu-H8-Rdh"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hCS-9x-9x2"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0Yr-B0-oHj" firstAttribute="leading" secondItem="hCS-9x-9x2" secondAttribute="leading" id="BZ6-rn-hal"/>
+                            <constraint firstItem="0Yr-B0-oHj" firstAttribute="trailing" secondItem="hCS-9x-9x2" secondAttribute="trailing" id="hbN-CM-nIz"/>
+                            <constraint firstItem="0Yr-B0-oHj" firstAttribute="top" secondItem="hCS-9x-9x2" secondAttribute="top" id="nlA-TC-J3b"/>
+                            <constraint firstAttribute="bottom" secondItem="0Yr-B0-oHj" secondAttribute="bottom" id="rRa-BO-o7e"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="0Yr-B0-oHj" id="bgL-xi-1mw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9HR-1Z-DVg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3684" y="54.679802955665025"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dKX-Iu-9lo">

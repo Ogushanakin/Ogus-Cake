@@ -31,6 +31,9 @@
 		7166CFB1286E989300FF005F /* BooksCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7166CFAF286E989300FF005F /* BooksCollectionViewCell.xib */; };
 		7166CFB8286EB31600FF005F /* DetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7166CFB7286EB31600FF005F /* DetailPageViewController.swift */; };
 		7166CFBA286EBE3F00FF005F /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7166CFB9286EBE3F00FF005F /* UIViewController.swift */; };
+		7166CFBF286ECA8000FF005F /* DishListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7166CFBD286ECA8000FF005F /* DishListTableViewCell.swift */; };
+		7166CFC0286ECA8000FF005F /* DishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7166CFBE286ECA8000FF005F /* DishListTableViewCell.xib */; };
+		7166CFC3286ECDE600FF005F /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7166CFC2286ECDE600FF005F /* ListDishesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +62,9 @@
 		7166CFAF286E989300FF005F /* BooksCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BooksCollectionViewCell.xib; sourceTree = "<group>"; };
 		7166CFB7286EB31600FF005F /* DetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewController.swift; sourceTree = "<group>"; };
 		7166CFB9286EBE3F00FF005F /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		7166CFBD286ECA8000FF005F /* DishListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListTableViewCell.swift; sourceTree = "<group>"; };
+		7166CFBE286ECA8000FF005F /* DishListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishListTableViewCell.xib; sourceTree = "<group>"; };
+		7166CFC2286ECDE600FF005F /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +170,7 @@
 		714328492864A1D4007FEEF2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7166CFC1286ECDC000FF005F /* ListDishes */,
 				7166CFB6286EB2E000FF005F /* DetailPage */,
 				71272FFB2866175A00FF6CAC /* Home */,
 				7143284B2864A1FB007FEEF2 /* Onboarding */,
@@ -207,9 +214,35 @@
 			path = DetailPage;
 			sourceTree = "<group>";
 		};
+		7166CFBB286ECA4300FF005F /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				7166CFBC286ECA5900FF005F /* DishListTableView */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		7166CFBC286ECA5900FF005F /* DishListTableView */ = {
+			isa = PBXGroup;
+			children = (
+				7166CFBD286ECA8000FF005F /* DishListTableViewCell.swift */,
+				7166CFBE286ECA8000FF005F /* DishListTableViewCell.xib */,
+			);
+			path = DishListTableView;
+			sourceTree = "<group>";
+		};
+		7166CFC1286ECDC000FF005F /* ListDishes */ = {
+			isa = PBXGroup;
+			children = (
+				7166CFC2286ECDE600FF005F /* ListDishesViewController.swift */,
+			);
+			path = ListDishes;
+			sourceTree = "<group>";
+		};
 		71F0E412286AFC3D00437925 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				7166CFBB286ECA4300FF005F /* TableViewCells */,
 				71070C75286D96C4006105D1 /* CardView */,
 				71070C68286D8E7B006105D1 /* CollectionViewCells */,
 			);
@@ -281,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				712FAFDF286DC47300FA1B65 /* WorkoutCollectionViewCell.xib in Resources */,
+				7166CFC0286ECA8000FF005F /* DishListTableViewCell.xib in Resources */,
 				7166CFB1286E989300FF005F /* BooksCollectionViewCell.xib in Resources */,
 				71070C6D286D8EC1006105D1 /* DishesCollectionViewCell.xib in Resources */,
 				7143284128649EE2007FEEF2 /* LaunchScreen.storyboard in Resources */,
@@ -296,11 +330,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7166CFC3286ECDE600FF005F /* ListDishesViewController.swift in Sources */,
 				7143283928649EE1007FEEF2 /* ViewController.swift in Sources */,
 				7166CFBA286EBE3F00FF005F /* UIViewController.swift in Sources */,
 				7166CFB8286EB31600FF005F /* DetailPageViewController.swift in Sources */,
 				71070C74286D9233006105D1 /* String+Extension.swift in Sources */,
 				71070C6F286D9054006105D1 /* Dishes.swift in Sources */,
+				7166CFBF286ECA8000FF005F /* DishListTableViewCell.swift in Sources */,
 				7143283528649EE1007FEEF2 /* AppDelegate.swift in Sources */,
 				71070C6C286D8EC1006105D1 /* DishesCollectionViewCell.swift in Sources */,
 				7143283728649EE1007FEEF2 /* SceneDelegate.swift in Sources */,

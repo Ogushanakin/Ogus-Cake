@@ -27,6 +27,9 @@
 		714328502864A4E8007FEEF2 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7143284F2864A4E8007FEEF2 /* UIView+Extension.swift */; };
 		714328522864A65A007FEEF2 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714328512864A65A007FEEF2 /* OnboardingSlide.swift */; };
 		714328542864AA14007FEEF2 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714328532864AA14007FEEF2 /* OnboardingCollectionViewCell.swift */; };
+		7166CFB0286E989300FF005F /* BooksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7166CFAE286E989300FF005F /* BooksCollectionViewCell.swift */; };
+		7166CFB1286E989300FF005F /* BooksCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7166CFAF286E989300FF005F /* BooksCollectionViewCell.xib */; };
+		7166CFB3286E9D2900FF005F /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7166CFB2286E9D2900FF005F /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,9 @@
 		7143284F2864A4E8007FEEF2 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		714328512864A65A007FEEF2 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		714328532864AA14007FEEF2 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		7166CFAE286E989300FF005F /* BooksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksCollectionViewCell.swift; sourceTree = "<group>"; };
+		7166CFAF286E989300FF005F /* BooksCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BooksCollectionViewCell.xib; sourceTree = "<group>"; };
+		7166CFB2286E9D2900FF005F /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 		71070C68286D8E7B006105D1 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				7166CFAD286E987000FF005F /* BooksCollectionViewCell */,
 				712FAFDB286DC45900FA1B65 /* WorkoutCollectionViewCell */,
 				71070C69286D8E86006105D1 /* DishesCollectionViewCell */,
 			);
@@ -148,6 +155,7 @@
 				714328512864A65A007FEEF2 /* OnboardingSlide.swift */,
 				71070C6E286D9054006105D1 /* Dishes.swift */,
 				712FAFE0286DC77800FA1B65 /* Workout.swift */,
+				7166CFB2286E9D2900FF005F /* Book.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -177,6 +185,15 @@
 				71070C73286D9233006105D1 /* String+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7166CFAD286E987000FF005F /* BooksCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7166CFAE286E989300FF005F /* BooksCollectionViewCell.swift */,
+				7166CFAF286E989300FF005F /* BooksCollectionViewCell.xib */,
+			);
+			path = BooksCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		71F0E412286AFC3D00437925 /* CustomViews */ = {
@@ -253,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				712FAFDF286DC47300FA1B65 /* WorkoutCollectionViewCell.xib in Resources */,
+				7166CFB1286E989300FF005F /* BooksCollectionViewCell.xib in Resources */,
 				71070C6D286D8EC1006105D1 /* DishesCollectionViewCell.xib in Resources */,
 				7143284128649EE2007FEEF2 /* LaunchScreen.storyboard in Resources */,
 				7143283E28649EE2007FEEF2 /* Assets.xcassets in Resources */,
@@ -267,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7166CFB3286E9D2900FF005F /* Book.swift in Sources */,
 				7143283928649EE1007FEEF2 /* ViewController.swift in Sources */,
 				71070C74286D9233006105D1 /* String+Extension.swift in Sources */,
 				71070C6F286D9054006105D1 /* Dishes.swift in Sources */,
@@ -275,6 +294,7 @@
 				7143283728649EE1007FEEF2 /* SceneDelegate.swift in Sources */,
 				71272FFD2866177400FF6CAC /* HomeViewController.swift in Sources */,
 				714328502864A4E8007FEEF2 /* UIView+Extension.swift in Sources */,
+				7166CFB0286E989300FF005F /* BooksCollectionViewCell.swift in Sources */,
 				714328522864A65A007FEEF2 /* OnboardingSlide.swift in Sources */,
 				712FAFDE286DC47300FA1B65 /* WorkoutCollectionViewCell.swift in Sources */,
 				714328542864AA14007FEEF2 /* OnboardingCollectionViewCell.swift in Sources */,

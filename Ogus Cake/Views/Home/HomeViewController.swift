@@ -12,6 +12,7 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var dishesCollectionView: UICollectionView!
     @IBOutlet weak var workoutCollectionView: UICollectionView!
+    @IBOutlet weak var booksCollectionView: UICollectionView!
     
     var dishes: [Dishes] = [
         .init(id: "id1", name: "Post Workout Meal", image: "https://picsum.photos/100/200"),
@@ -31,6 +32,16 @@ class HomeViewController: UIViewController {
 
     ]
     
+    var books: [Book] = [
+    
+        .init(id: "id3", name: "Black Book", image: "https://picsum.photos/100/200", description: "Orhan Pamuk", secondDescription: "Literature"),
+        .init(id: "id3", name: "Homo Sapiens", image: "https://picsum.photos/100/200", description: "Yuval Noah Harari", secondDescription: "History,Science"),
+        .init(id: "id3", name: "Das Kapital", image: "https://picsum.photos/100/200", description: "Karl Marx", secondDescription: "Politics"),
+        .init(id: "id3", name: "Harry Potter", image: "https://picsum.photos/100/200", description: "J. K. Rowling", secondDescription: "Fantastic"),
+        .init(id: "id3", name: "The Little Prince", image: "https://picsum.photos/100/200", description: "Antoine de Saint-Exupery", secondDescription: "Child")
+        
+    ]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +53,7 @@ class HomeViewController: UIViewController {
     private func registerCells() {
         dishesCollectionView.register(UINib(nibName: DishesCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: DishesCollectionViewCell.identifier)
         workoutCollectionView.register(UINib(nibName: WorkoutCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: WorkoutCollectionViewCell.identifier)
+        booksCollectionView.register(UINib(nibName: BooksCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: BooksCollectionViewCell.identifier)
     }
     
 }
@@ -53,6 +65,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return dishes.count
         case workoutCollectionView:
             return workouts.count
+        case booksCollectionView:
+            return books.count
         default: return 0
         }
     }
@@ -66,9 +80,11 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: WorkoutCollectionViewCell.identifier, for: indexPath) as! WorkoutCollectionViewCell
             cell.setup(workout: workouts[indexPath.row])
             return cell
+        case booksCollectionView:
+            let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: BooksCollectionViewCell.identifier, for: indexPath) as! BooksCollectionViewCell
+            cell.setup(book: books[indexPath.row])
+            return cell
         default: return UICollectionViewCell()
         }
-        
-        
     }
 }

@@ -16,8 +16,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var booksCollectionView: UICollectionView!
     
     var categories: [Dishes] = []
-    var workouts: [Model] = []
-    var books: [Model] = []
+    var populars: [Model] = []
+    var specials: [Model] = []
     
     
     override func viewDidLoad() {
@@ -31,8 +31,8 @@ class HomeViewController: UIViewController {
             case .success(let allDishes):
                 ProgressHUD.dismiss()
                 self?.categories = allDishes.categories ?? []
-                self?.workouts = allDishes.workouts ?? []
-                self?.books = allDishes.books ?? []
+                self?.populars = allDishes.populars ?? []
+                self?.specials = allDishes.specials ?? []
                 
                 self?.dishesCollectionView.reloadData()
                 self?.workoutCollectionView.reloadData()
@@ -58,9 +58,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         case dishesCollectionView:
             return categories.count
         case workoutCollectionView:
-            return workouts.count
+            return populars.count
         case booksCollectionView:
-            return books.count
+            return specials.count
         default: return 0
         }
     }
@@ -72,11 +72,11 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return cell
         case workoutCollectionView:
             let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: WorkoutCollectionViewCell.identifier, for: indexPath) as! WorkoutCollectionViewCell
-            cell.setup(workout: workouts[indexPath.row])
+            cell.setup(workout: populars[indexPath.row])
             return cell
         case booksCollectionView:
             let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: BooksCollectionViewCell.identifier, for: indexPath) as! BooksCollectionViewCell
-            cell.setup(book: books[indexPath.row])
+            cell.setup(book: specials[indexPath.row])
             return cell
         default: return UICollectionViewCell()
         }
@@ -89,7 +89,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             navigationController?.pushViewController(controller, animated: true)
         } else {
             let controller = DetailPageViewController.instantiate()
-            controller.dish = collectionView == workoutCollectionView ? workouts[indexPath.row] : books[indexPath.row]
+            controller.dish = collectionView == workoutCollectionView ? populars[indexPath.row] : specials[indexPath.row]
             navigationController?.pushViewController(controller, animated: true)
         }
     }

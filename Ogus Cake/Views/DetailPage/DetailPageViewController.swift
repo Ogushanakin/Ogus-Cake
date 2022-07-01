@@ -31,6 +31,9 @@ class DetailPageViewController: UIViewController {
     }
 
     @IBAction func addBtnClicked(_ sender: UIButton) {
+        
+        
+        
     }
     
 

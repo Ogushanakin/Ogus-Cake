@@ -43,6 +43,7 @@
 		71E07A60286F192300F594C4 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E07A5F286F192300F594C4 /* ApiResponse.swift */; };
 		71E07A62286F2A8000F594C4 /* AllDishes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E07A61286F2A8000F594C4 /* AllDishes.swift */; };
 		71E07A65286F2E0A00F594C4 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 71E07A64286F2E0A00F594C4 /* ProgressHUD */; };
+		71F1CEF9286F69A500FCEDCA /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 71F1CEF8286F69A500FCEDCA /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +92,7 @@
 			files = (
 				71070C72286D915B006105D1 /* Kingfisher in Frameworks */,
 				71E07A65286F2E0A00F594C4 /* ProgressHUD in Frameworks */,
+				71F1CEF9286F69A500FCEDCA /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +312,7 @@
 			packageProductDependencies = (
 				71070C71286D915B006105D1 /* Kingfisher */,
 				71E07A64286F2E0A00F594C4 /* ProgressHUD */,
+				71F1CEF8286F69A500FCEDCA /* IQKeyboardManagerSwift */,
 			);
 			productName = "Ogus Cake";
 			productReference = 7143283128649EE1007FEEF2 /* Ogus Cake.app */;
@@ -342,6 +345,7 @@
 			packageReferences = (
 				71070C70286D915B006105D1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				71E07A63286F2E0A00F594C4 /* XCRemoteSwiftPackageReference "ProgressHUD" */,
+				71F1CEF7286F69A500FCEDCA /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 7143283228649EE1007FEEF2 /* Products */;
 			projectDirPath = "";
@@ -636,6 +640,14 @@
 				kind = branch;
 			};
 		};
+		71F1CEF7286F69A500FCEDCA /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -648,6 +660,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 71E07A63286F2E0A00F594C4 /* XCRemoteSwiftPackageReference "ProgressHUD" */;
 			productName = ProgressHUD;
+		};
+		71F1CEF8286F69A500FCEDCA /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71F1CEF7286F69A500FCEDCA /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

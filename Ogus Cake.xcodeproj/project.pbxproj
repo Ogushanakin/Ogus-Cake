@@ -17,6 +17,8 @@
 		712FAFDE286DC47300FA1B65 /* WorkoutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712FAFDC286DC47300FA1B65 /* WorkoutCollectionViewCell.swift */; };
 		712FAFDF286DC47300FA1B65 /* WorkoutCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 712FAFDD286DC47300FA1B65 /* WorkoutCollectionViewCell.xib */; };
 		712FAFE1286DC77800FA1B65 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712FAFE0286DC77800FA1B65 /* Model.swift */; };
+		713679AD286EDCE400AE4B55 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713679AC286EDCE400AE4B55 /* LibraryViewController.swift */; };
+		713679AF286EDE8E00AE4B55 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713679AE286EDE8E00AE4B55 /* Library.swift */; };
 		7143283528649EE1007FEEF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7143283428649EE1007FEEF2 /* AppDelegate.swift */; };
 		7143283728649EE1007FEEF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7143283628649EE1007FEEF2 /* SceneDelegate.swift */; };
 		7143283928649EE1007FEEF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7143283828649EE1007FEEF2 /* ViewController.swift */; };
@@ -46,6 +48,8 @@
 		712FAFDC286DC47300FA1B65 /* WorkoutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCollectionViewCell.swift; sourceTree = "<group>"; };
 		712FAFDD286DC47300FA1B65 /* WorkoutCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkoutCollectionViewCell.xib; sourceTree = "<group>"; };
 		712FAFE0286DC77800FA1B65 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		713679AC286EDCE400AE4B55 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		713679AE286EDE8E00AE4B55 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
 		7143283128649EE1007FEEF2 /* Ogus Cake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ogus Cake.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7143283428649EE1007FEEF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7143283628649EE1007FEEF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +127,14 @@
 			path = WorkoutCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		713679AB286EDCCB00AE4B55 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				713679AC286EDCE400AE4B55 /* LibraryViewController.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		7143282828649EE1007FEEF2 = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +175,7 @@
 				714328512864A65A007FEEF2 /* OnboardingSlide.swift */,
 				71070C6E286D9054006105D1 /* Dishes.swift */,
 				712FAFE0286DC77800FA1B65 /* Model.swift */,
+				713679AE286EDE8E00AE4B55 /* Library.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -170,6 +183,7 @@
 		714328492864A1D4007FEEF2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				713679AB286EDCCB00AE4B55 /* Library */,
 				7166CFC1286ECDC000FF005F /* ListDishes */,
 				7166CFB6286EB2E000FF005F /* DetailPage */,
 				71272FFB2866175A00FF6CAC /* Home */,
@@ -336,7 +350,9 @@
 				7166CFB8286EB31600FF005F /* DetailPageViewController.swift in Sources */,
 				71070C74286D9233006105D1 /* String+Extension.swift in Sources */,
 				71070C6F286D9054006105D1 /* Dishes.swift in Sources */,
+				713679AD286EDCE400AE4B55 /* LibraryViewController.swift in Sources */,
 				7166CFBF286ECA8000FF005F /* DishListTableViewCell.swift in Sources */,
+				713679AF286EDE8E00AE4B55 /* Library.swift in Sources */,
 				7143283528649EE1007FEEF2 /* AppDelegate.swift in Sources */,
 				71070C6C286D8EC1006105D1 /* DishesCollectionViewCell.swift in Sources */,
 				7143283728649EE1007FEEF2 /* SceneDelegate.swift in Sources */,

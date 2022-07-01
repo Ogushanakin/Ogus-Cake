@@ -295,8 +295,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Ogus Cake" id="T8M-XS-ztP">
+                        <barButtonItem key="backBarButtonItem" title=" " id="GpI-me-2Yj"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="menucard" catalog="system" id="cDF-pd-Y0u">
                             <color key="tintColor" red="0.86666667460000002" green="0.22948700220000001" blue="0.19178078209999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="oJC-j5-gij" kind="show" id="NmO-CH-4NN"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -452,6 +456,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FOJ-en-KYK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="958" y="55"/>
+        </scene>
+        <!--Library View Controller-->
+        <scene sceneID="dGQ-ep-c5D">
+            <objects>
+                <viewController storyboardIdentifier="LibraryViewController" id="oJC-j5-gij" customClass="LibraryViewController" customModule="Ogus_Cake" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h3c-99-j2B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="SOw-5F-3ZJ">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="oJC-j5-gij" id="yOh-i8-gIG"/>
+                                    <outlet property="delegate" destination="oJC-j5-gij" id="YTr-eb-Fxp"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="B9t-A8-53Q"/>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="SOw-5F-3ZJ" firstAttribute="trailing" secondItem="B9t-A8-53Q" secondAttribute="trailing" id="f7P-T4-3Y1"/>
+                            <constraint firstItem="SOw-5F-3ZJ" firstAttribute="leading" secondItem="B9t-A8-53Q" secondAttribute="leading" id="hZg-dq-iPM"/>
+                            <constraint firstAttribute="bottom" secondItem="SOw-5F-3ZJ" secondAttribute="bottom" id="kpR-ZQ-RLt"/>
+                            <constraint firstItem="SOw-5F-3ZJ" firstAttribute="top" secondItem="B9t-A8-53Q" secondAttribute="top" id="vfK-xr-q46"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yFz-ZB-www"/>
+                    <connections>
+                        <outlet property="tableView" destination="SOw-5F-3ZJ" id="Sy4-Yt-1Lr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="03u-qM-Wfs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1880.8" y="787.6847290640394"/>
         </scene>
     </scenes>
     <resources>

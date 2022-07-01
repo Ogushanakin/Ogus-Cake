@@ -19,4 +19,10 @@ class DishListTableViewCell: UITableViewCell {
         dishTitleLbl.text = dish.name
         descriptionLbl.text = dish.description
     }
+    
+    func setup(library: Library) {
+        dishImageView.kf.setImage(with: library.dish?.image?.asUrl)
+        dishTitleLbl.text = library.dish?.name
+        descriptionLbl.text = library.dish?.description
+    }
 }

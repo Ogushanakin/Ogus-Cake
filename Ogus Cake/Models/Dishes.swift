@@ -7,6 +7,12 @@
 
 import Foundation
 
-struct Dishes {
+struct Dishes: Decodable {
     let id, name, image: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name = "title"
+        case image
+    }
 }

@@ -36,6 +36,13 @@
 		7166CFBF286ECA8000FF005F /* DishListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7166CFBD286ECA8000FF005F /* DishListTableViewCell.swift */; };
 		7166CFC0286ECA8000FF005F /* DishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7166CFBE286ECA8000FF005F /* DishListTableViewCell.xib */; };
 		7166CFC3286ECDE600FF005F /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7166CFC2286ECDE600FF005F /* ListDishesViewController.swift */; };
+		71E07A58286EFA2E00F594C4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E07A57286EFA2E00F594C4 /* NetworkService.swift */; };
+		71E07A5A286EFAD800F594C4 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E07A59286EFAD800F594C4 /* Route.swift */; };
+		71E07A5C286EFB7500F594C4 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E07A5B286EFB7500F594C4 /* Method.swift */; };
+		71E07A5E286F13AD00F594C4 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E07A5D286F13AD00F594C4 /* AppError.swift */; };
+		71E07A60286F192300F594C4 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E07A5F286F192300F594C4 /* ApiResponse.swift */; };
+		71E07A62286F2A8000F594C4 /* AllDishes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E07A61286F2A8000F594C4 /* AllDishes.swift */; };
+		71E07A65286F2E0A00F594C4 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 71E07A64286F2E0A00F594C4 /* ProgressHUD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +76,12 @@
 		7166CFBD286ECA8000FF005F /* DishListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListTableViewCell.swift; sourceTree = "<group>"; };
 		7166CFBE286ECA8000FF005F /* DishListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishListTableViewCell.xib; sourceTree = "<group>"; };
 		7166CFC2286ECDE600FF005F /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
+		71E07A57286EFA2E00F594C4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		71E07A59286EFAD800F594C4 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		71E07A5B286EFB7500F594C4 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		71E07A5D286F13AD00F594C4 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		71E07A5F286F192300F594C4 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		71E07A61286F2A8000F594C4 /* AllDishes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDishes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +90,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71070C72286D915B006105D1 /* Kingfisher in Frameworks */,
+				71E07A65286F2E0A00F594C4 /* ProgressHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +168,7 @@
 		7143283328649EE1007FEEF2 /* Ogus Cake */ = {
 			isa = PBXGroup;
 			children = (
+				71E07A56286EFA1200F594C4 /* Networking */,
 				7143284E2864A4C9007FEEF2 /* Extensions */,
 				71F0E412286AFC3D00437925 /* CustomViews */,
 				714328492864A1D4007FEEF2 /* Views */,
@@ -176,6 +191,7 @@
 				71070C6E286D9054006105D1 /* Dishes.swift */,
 				712FAFE0286DC77800FA1B65 /* Model.swift */,
 				713679AE286EDE8E00AE4B55 /* Library.swift */,
+				71E07A61286F2A8000F594C4 /* AllDishes.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -253,6 +269,18 @@
 			path = ListDishes;
 			sourceTree = "<group>";
 		};
+		71E07A56286EFA1200F594C4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				71E07A57286EFA2E00F594C4 /* NetworkService.swift */,
+				71E07A59286EFAD800F594C4 /* Route.swift */,
+				71E07A5B286EFB7500F594C4 /* Method.swift */,
+				71E07A5D286F13AD00F594C4 /* AppError.swift */,
+				71E07A5F286F192300F594C4 /* ApiResponse.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		71F0E412286AFC3D00437925 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +309,7 @@
 			name = "Ogus Cake";
 			packageProductDependencies = (
 				71070C71286D915B006105D1 /* Kingfisher */,
+				71E07A64286F2E0A00F594C4 /* ProgressHUD */,
 			);
 			productName = "Ogus Cake";
 			productReference = 7143283128649EE1007FEEF2 /* Ogus Cake.app */;
@@ -312,6 +341,7 @@
 			mainGroup = 7143282828649EE1007FEEF2;
 			packageReferences = (
 				71070C70286D915B006105D1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				71E07A63286F2E0A00F594C4 /* XCRemoteSwiftPackageReference "ProgressHUD" */,
 			);
 			productRefGroup = 7143283228649EE1007FEEF2 /* Products */;
 			projectDirPath = "";
@@ -344,20 +374,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71E07A58286EFA2E00F594C4 /* NetworkService.swift in Sources */,
 				7166CFC3286ECDE600FF005F /* ListDishesViewController.swift in Sources */,
 				7143283928649EE1007FEEF2 /* ViewController.swift in Sources */,
 				7166CFBA286EBE3F00FF005F /* UIViewController.swift in Sources */,
 				7166CFB8286EB31600FF005F /* DetailPageViewController.swift in Sources */,
+				71E07A60286F192300F594C4 /* ApiResponse.swift in Sources */,
 				71070C74286D9233006105D1 /* String+Extension.swift in Sources */,
 				71070C6F286D9054006105D1 /* Dishes.swift in Sources */,
 				713679AD286EDCE400AE4B55 /* LibraryViewController.swift in Sources */,
+				71E07A5C286EFB7500F594C4 /* Method.swift in Sources */,
 				7166CFBF286ECA8000FF005F /* DishListTableViewCell.swift in Sources */,
+				71E07A5A286EFAD800F594C4 /* Route.swift in Sources */,
 				713679AF286EDE8E00AE4B55 /* Library.swift in Sources */,
 				7143283528649EE1007FEEF2 /* AppDelegate.swift in Sources */,
+				71E07A62286F2A8000F594C4 /* AllDishes.swift in Sources */,
 				71070C6C286D8EC1006105D1 /* DishesCollectionViewCell.swift in Sources */,
 				7143283728649EE1007FEEF2 /* SceneDelegate.swift in Sources */,
 				71272FFD2866177400FF6CAC /* HomeViewController.swift in Sources */,
 				714328502864A4E8007FEEF2 /* UIView+Extension.swift in Sources */,
+				71E07A5E286F13AD00F594C4 /* AppError.swift in Sources */,
 				7166CFB0286E989300FF005F /* BooksCollectionViewCell.swift in Sources */,
 				714328522864A65A007FEEF2 /* OnboardingSlide.swift in Sources */,
 				712FAFDE286DC47300FA1B65 /* WorkoutCollectionViewCell.swift in Sources */,
@@ -592,6 +628,14 @@
 				kind = branch;
 			};
 		};
+		71E07A63286F2E0A00F594C4 /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -599,6 +643,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 71070C70286D915B006105D1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		71E07A64286F2E0A00F594C4 /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71E07A63286F2E0A00F594C4 /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

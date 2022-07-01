@@ -8,6 +8,6 @@
 import Foundation
 import UIKit
 
-struct Model {
-    let id, name, image,description, secondDescription: String?
+struct Model: Decodable {
+    let id, name, image, description, secondDescription: String?
 }

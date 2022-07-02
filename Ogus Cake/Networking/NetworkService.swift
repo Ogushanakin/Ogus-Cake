@@ -27,6 +27,10 @@ struct NetworkService {
         request(route: .fetchMeals(dishId), method: .get, completion: completion)
     }
     
+    func fetchLibrary(completion: @escaping(Result<[Library], Error>) -> Void) {
+        request(route: .fetchLibrary, method: .get, completion: completion)
+    }
+    
     private func request<T: Decodable>(route: Route,
                                      method: Method,
                                      parameters:[String: Any]? = nil,

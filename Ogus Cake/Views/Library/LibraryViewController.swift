@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class LibraryViewController: UIViewController {
 
@@ -19,6 +20,22 @@ class LibraryViewController: UIViewController {
         title = "Library"
         registerCells()
         
+        ProgressHUD.show()
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        NetworkService.shared.fetchLibrary { [weak self] (result) in
+            switch result {
+            case .success(let library):
+                ProgressHUD.dismiss()
+                
+                self?.library = library
+                self?.tableView.reloadData()
+            case .failure(let error):
+                ProgressHUD.showError(error.localizedDescription)
+            }
+        }
     }
     
     private func registerCells() {

@@ -11,20 +11,8 @@ class LibraryViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var library: [Library] = [
+    var library: [Library] = []
     
-        .init(id: "id", name: "MY Upper Body Workout", dish:
-                .init(id: "id2", name: "Upper Body Workout", image: "https://picsum.photos/100/200", description: "Lean muscle build", secondDescription: "chest,abs,back and shoulder training plan")),
-        .init(id: "id", name: "MY Read-List", dish:
-                .init(id: "id2", name: "Black Book", image: "https://picsum.photos/100/200", description: "Orhan Pamuk", secondDescription: "Literature")),
-        .init(id: "id", name: "MY Upper Body Workout", dish:
-                .init(id: "id2", name: "Post Workout Meal", image: "https://picsum.photos/100/200", description: "Lean muscle build", secondDescription: "Chicken Brest,Brown Rice and Greens")),
-        .init(id: "id", name: "MY Upper Body Workout", dish:
-                .init(id: "id2", name: "Upper Body Workout", image: "https://picsum.photos/100/200", description: "Lean muscle build", secondDescription: "chest,abs,back and shoulder training plan")),
-        .init(id: "id", name: "MY Upper Body Workout", dish:
-                .init(id: "id2", name: "Upper Body Workout", image: "https://picsum.photos/100/200", description: "Lean muscle build", secondDescription: "chest,abs,back and shoulder training plan"))
-        
-    ]
     override func viewDidLoad() {
         super.viewDidLoad()
 

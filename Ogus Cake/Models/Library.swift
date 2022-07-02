@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Library {
+struct Library: Decodable {
     let id: String?
     let name: String?
     let dish: Model?

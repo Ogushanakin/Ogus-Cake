@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class DetailPageViewController: UIViewController {
 
@@ -31,8 +32,18 @@ class DetailPageViewController: UIViewController {
     }
 
     @IBAction func addBtnClicked(_ sender: UIButton) {
+        let name = titleLbl.text?.trimmingCharacters(in: .whitespaces)
         
-        
+        ProgressHUD.show("Add Library...")
+        NetworkService.shared.placeOrder(dishId: dish.id ?? "" , name: name ?? "") { (result) in
+            switch result {
+            case .success(_):
+                ProgressHUD.showSuccess("Added your Library")
+            case.failure(let error):
+                ProgressHUD.showError(error.localizedDescription)
+            }
+            
+        }
         
     }
     
